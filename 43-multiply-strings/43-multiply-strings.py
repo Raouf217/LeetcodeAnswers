@@ -5,4 +5,4 @@ class Solution(object):
         :type num2: str
         :rtype: str
         """
-        return str(eval(num1) * eval(num2))
+        return str(int(num1) * int(num2))
