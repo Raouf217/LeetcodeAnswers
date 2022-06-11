@@ -5,8 +5,10 @@ class Solution(object):
         :type high: int
         :rtype: int
         """
-#         if(high%2 == 1):
-#             high += 1
+        if(high%2 == 1):
+            high += 1
             
-#         return high//2-low//2
-        return [((high-low)//2)+1, (high-low)//2][high%2==0 and low%2==0]
+        return high//2-low//2
+
+
+        # return [((high-low)//2)+1, (high-low)//2][high%2==0 and low%2==0]
