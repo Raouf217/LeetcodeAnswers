@@ -22,9 +22,9 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        x =  self.binary(nums,0,len(nums)-1,target)
-        return x
+#         x =  self.binary(nums,0,len(nums)-1,target)
+#         return x
        
-        # if target not in nums : return -1
-        # return nums.index(target)
+        if target not in nums : return -1
+        return nums.index(target)
     
