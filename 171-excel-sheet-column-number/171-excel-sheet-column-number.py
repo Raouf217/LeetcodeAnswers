@@ -5,8 +5,8 @@ class Solution(object):
         :rtype: int
         """
         result = 0
-        for B in range(len(columnTitle)):
+        for i in range(len(columnTitle)):
             result *= 26
-            result += ord(columnTitle[B]) - ord('A') + 1
+            result += ord(columnTitle[i]) - ord('A') + 1
 
         return result
