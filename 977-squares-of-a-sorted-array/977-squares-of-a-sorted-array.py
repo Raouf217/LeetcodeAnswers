@@ -23,4 +23,4 @@ def quicksort(array):
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
         ls = [x*x for x in nums]
-        return quicksort(ls)
+        return sorted(ls)
