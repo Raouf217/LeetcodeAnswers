@@ -1,32 +1,6 @@
-def quicksort(array):
-    
-    if len(array) < 2:
-        return array
-
-    low, same, high = [], [], []
-
-    
-    pivot = array[randint(0, len(array) - 1)]
-
-    for item in array:
-        
-        if item < pivot:
-            low.append(item)
-        elif item == pivot:
-            same.append(item)
-        elif item > pivot:
-            high.append(item)
-
-    
-    return quicksort(low) + same + quicksort(high)
-
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        # ls = [x*x for x in nums]
-        # return quicksort(ls)
-        
         ls=[]
         for num in nums:
             ls.append(num**2)
-        return quicksort(ls)
-        # return sorted(ls)
+        return sorted(ls)
