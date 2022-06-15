@@ -22,10 +22,10 @@ def quicksort(array):
 
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        # ls = [x*x for x in nums]
+        ls = [x*x for x in nums]
         # return quicksort(ls)
         
-        x=[]
-        for num in nums:
-            x.append(num**2)
-        return sorted(x)
+        # # ls=[]
+        # for num in nums:
+        #     ls.append(num**2)
+        return sorted(ls)
