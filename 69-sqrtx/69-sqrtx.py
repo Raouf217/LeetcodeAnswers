@@ -1,4 +1,4 @@
-import numpy as np
+from numpy import sqrt
 class Solution:
     def mySqrt(self, x: int) -> int:
-        return int(np.sqrt(x))
+        return int(sqrt(x))
